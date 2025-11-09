@@ -1,1 +1,3 @@
+#include "atsukey.dtsi"
+/* 左はオフセット不要（中央＝Left） */
 
