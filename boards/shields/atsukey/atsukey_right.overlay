@@ -1,1 +1,7 @@
+#include "atsukey.dtsi"
+
+/* 右は左の5列ぶんオフセット（公式の col-offset 例）:contentReference[oaicite:9]{index=9} */
+&default_transform {
+    col-offset = <5>;
+};
 
