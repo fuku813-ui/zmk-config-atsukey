@@ -4,25 +4,25 @@
     /* --- キースキャン（4行×5列）。XIAOインタコネクト外のnRFピンは &gpioX Y で指定（公式の記法）:contentReference[oaicite:5]{index=5} */
     kscan0: kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
-    /* ← 多くの自作配線は row2col。逆なら後で col2row に戻してOK */
     diode-direction = "row2col";
     wakeup-source;
 
-    /* 行は入力: プルアップ & Active Low */
+    /* 行＝入力：プルダウン & Active High（= Hになったら押下と解釈） */
     row-gpios =
-        <&gpio0 3  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-        <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-        <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-        <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+        <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+        <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+        <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
-    /* 列は出力: Active Low（プル指定なし） */
+    /* 列＝出力：Active High（スキャン時に列をH駆動して読む想定） */
     col-gpios =
-        <&gpio1 15 GPIO_ACTIVE_LOW>,
-        <&gpio1 14 GPIO_ACTIVE_LOW>,
-        <&gpio1 13 GPIO_ACTIVE_LOW>,
-        <&gpio1 12 GPIO_ACTIVE_LOW>,
-        <&gpio0 9  GPIO_ACTIVE_LOW>; /* ← 5列目がNFC1ピン。後述の注意あり */
+        <&gpio1 15 GPIO_ACTIVE_HIGH>,
+        <&gpio1 14 GPIO_ACTIVE_HIGH>,
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio1 12 GPIO_ACTIVE_HIGH>,
+        <&gpio0 9  GPIO_ACTIVE_HIGH>;
 };
+
 
 
     /* --- 行列→キー位置のマッピング（splitは“合体後”の列数を指定、公式の手順）:contentReference[oaicite:6]{index=6} */
