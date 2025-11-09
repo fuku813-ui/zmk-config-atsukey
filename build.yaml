@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: atsukey_left
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: atsukey_right
