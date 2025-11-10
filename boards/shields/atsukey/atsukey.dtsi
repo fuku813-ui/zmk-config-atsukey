@@ -4,7 +4,7 @@
     /* --- キースキャン（4行×5列）。XIAOインタコネクト外のnRFピンは &gpioX Y で指定（公式の記法）:contentReference[oaicite:5]{index=5} */
     kscan0: kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
-    diode-direction = "col2row";
+    diode-direction = "row2col";
     wakeup-source;
 
     /* 行＝入力：プルダウン & Active High（= Hになったら押下と解釈） */
