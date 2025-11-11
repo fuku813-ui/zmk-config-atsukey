@@ -17,11 +17,11 @@
     /* 列＝出力：Active High（スキャン時に列をH駆動して読む想定） */
     /* col-gpios を“逆順”にする例 */
     col-gpios =
-        <&gpio1 14 GPIO_ACTIVE_HIGH>,  /* ← まず P1.12 を col=0 に */
-        <&gpio1 14 GPIO_ACTIVE_HIGH>,
-        <&gpio1 14 GPIO_ACTIVE_HIGH>,
-        <&gpio1 14 GPIO_ACTIVE_HIGH>,
-        <&gpio0 14 GPIO_ACTIVE_HIGH>;  /* NFC1 */
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,  /* ← まず P1.12 を col=0 に */
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio1 13 GPIO_ACTIVE_HIGH>,
+        <&gpio0 13 GPIO_ACTIVE_HIGH>;  /* NFC1 */
 
 };
 
