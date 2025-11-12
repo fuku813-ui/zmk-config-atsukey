@@ -21,7 +21,7 @@
         <&gpio1 14 GPIO_ACTIVE_HIGH>,
         <&gpio1 13 GPIO_ACTIVE_HIGH>,
         <&gpio1 12 GPIO_ACTIVE_HIGH>,
-        <&gpio0 9 GPIO_ACTIVE_HIGH>;  /* NFC1 */
+        <&gpio0 10 GPIO_ACTIVE_HIGH>;  /* NFC1 */
 
 };
 
