@@ -2,8 +2,8 @@ file_format: "1"
 id: atsukey
 name: Atsukey
 type: shield
-url: https://example.com/atsukey  # リポに置き換え
-requires: [seeed_xiao]            # インタコネクト種別（公式例では pro_micro 等）:contentReference[oaicite:10]{index=10}
+url: https://github.com/fuku813-ui/zmk-config-atsukey  # リポに置き換え
+requires: [seeeduino_xiao_ble]            # インタコネクト種別（公式例では pro_micro 等）:contentReference[oaicite:10]{index=10}
 features:
   - keys
 siblings:
