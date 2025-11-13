@@ -1,7 +1,7 @@
 if SHIELD_ATSUKEY_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Atsukey_left"
+    default "Atsukey"
 
 config ZMK_SPLIT
     default y
@@ -14,7 +14,7 @@ endif
 if SHIELD_ATSUKEY_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Atsukey_right"
+    default "Atsukey"
 
 config ZMK_SPLIT
     default y
