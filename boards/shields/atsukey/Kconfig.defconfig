@@ -9,6 +9,12 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
 endif
 
 if SHIELD_ATSUKEY_RIGHT
@@ -17,6 +23,12 @@ config ZMK_KEYBOARD_NAME
     default "Atsukey"
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
     default y
 
 endif
