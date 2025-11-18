@@ -6,7 +6,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            /* 左5列 + 右5列。未配列は &trans でOK（後で好きに埋めて） */
+            /* 左5列 + 右5列。未配列は &trans で埋める */
             bindings = <
                 &kp Q   &kp W   &kp E   &kp R   &kp T     &kp P     &kp O     &kp I     &kp U     &kp Y
                 &kp A   &kp S   &kp D   &kp F   &kp G     &trans    &kp L     &kp K     &kp J     &kp H
