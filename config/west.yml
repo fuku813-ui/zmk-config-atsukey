@@ -9,8 +9,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: fuku813-ui
-      revision: main
   self:
     path: config
