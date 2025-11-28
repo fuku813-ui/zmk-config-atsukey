@@ -29,6 +29,6 @@ config ZMK_BLE
     default y
 
 config ZMK_USB
-    default y
+    default n
 
 endif
