@@ -1,5 +1,5 @@
-config SHIELD_atsukey_LEFT
+config SHIELD_atsukey_left
     def_bool $(shields_list_contains,atsukey_left)
 
-config SHIELD_atsukey_RIGHT
+config SHIELD_atsukey_right
     def_bool $(shields_list_contains,atsukey_right)
