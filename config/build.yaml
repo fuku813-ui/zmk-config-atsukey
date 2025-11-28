@@ -1,12 +1,9 @@
-# This file generates the build matrix
-# https://zmk.dev/docs/user-setup#build-matrix
-
 include:
-  # 左手側: 
+  # 左手 (Left): ログ用スニペット「zmk-usb-logging」を適用
   - board: seeeduino_xiao_ble
     shield: atsukey_left
-    #snippet: studio-rpc-usb-uart
+    snippet: zmk-usb-logging
 
-  # 右手側: 
+  # 右手 (Right): 何もなし (変更不要)
   - board: seeeduino_xiao_ble
     shield: atsukey_right
