@@ -2,7 +2,7 @@ include:
   # 左手 (Left): ログ用スニペット「zmk-usb-logging」を適用
   - board: seeeduino_xiao_ble
     shield: atsukey_left
-    #snippet: zmk-usb-logging
+    snippet: zmk-usb-logging
 
   # 右手 (Right): 何もなし (変更不要)
   - board: seeeduino_xiao_ble
