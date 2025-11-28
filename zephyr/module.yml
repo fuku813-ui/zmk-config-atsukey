@@ -1,4 +1,4 @@
-name: Atsukey
+name: atsukey
 build:
   settings:
     board_root: .
