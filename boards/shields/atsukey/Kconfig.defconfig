@@ -1,4 +1,4 @@
-if SHIELD_ATSUKEY_LEFT
+if SHIELD_atsukey_left
 
 config ZMK_KEYBOARD_NAME
     default "atsukey"
@@ -17,7 +17,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_ATSUKEY_RIGHT
+if SHIELD_atsukey_right
 
 config ZMK_KEYBOARD_NAME
     default "atsukey"
