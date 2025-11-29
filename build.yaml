@@ -24,7 +24,6 @@ include:
     snippet: zmk-usb-logging studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: atsukey_right
-    snippet: zmk-usb-logging studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: settings_reset
 
