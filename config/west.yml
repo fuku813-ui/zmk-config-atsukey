@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: fuku813-ui
-      url-base: https://github.com/fuku813-ui
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3-branch
       import: app/west.yml
   self:
     path: config
