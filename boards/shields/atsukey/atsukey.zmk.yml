@@ -6,7 +6,3 @@ url: https://github.com/fuku813-ui/zmk-config-atsukey  # リポに置き換え
 requires: [seeeduino_xiao_ble]            # インタコネクト種別（公式例では pro_micro 等）:contentReference[oaicite:10]{index=10}
 features:
   - keys
-siblings:
-  - atsukey_left
-  - atsukey_right
-
